@@ -1,0 +1,10 @@
+Schedule delivery is inexact for Android KitKat (API 19) and above due to energy saving feature:
+http://developer.android.com/reference/android/app/AlarmManager.html
+
+Xiaomi MiUI's does not schedule accurate timings because of energy saving feature:
+http://xiaomi.eu/community/threads/alarmmanager-_wakeup-problem.21430/
+
+License Checker crashes if Google Account is not setup:
+https://code.google.com/p/android/issues/detail?can=2&start=0&num=100&q=&colspec=ID%20Type%20Status%20Owner%20Summary%20Stars&groupby=&sort=&id=26722
+
+License Checker bindService requires explicit intent in Android Lollipop, solved with setPackage("com.railkill.lowyatbumper") to Intent before bindService();

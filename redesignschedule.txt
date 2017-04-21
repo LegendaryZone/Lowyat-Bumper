@@ -1,0 +1,72 @@
++----------------------------+
+| ALL DAYS KEEP TRACK METHOD |
++----------------------------+
+
+alarmName;bumpString;hour;min;hour;min;hour;min;hour;min;hour;min;hour;min;hour;min
+
+EVERYDAY ALARM EXAMPLE:
+EverydayWoo;https://forumlowyatid;8;30;8;30;8;30;8;30;8;30;8;30;8;30
+
+DIFFERENT DAYS ALARM EXAMPLE
+Diffday;https://forumlowyatid;10;00;15;30;8;29;6;30;20;10;9;15;23;11
+
+
+Sunday = parts[2], parts[3]
+Monday = parts[4], parts[5]
+Tuesday = parts[6], parts[7]
+Wednesday = parts[8], parts[9]
+Thursday = parts[10], parts[11]
+Friday = parts[12], parts[13]
+Saturday = parts[14], parts[15]
+
+
++---------------------------------+
+| EVERYDAY OR SPECIFIC DAY METHOD |
++---------------------------------+
+
+alarmName;hour;min;bumpstring;day
+
+EVERYDAY ALARM EXAMPLE:
+EverydayWoo;8;30;https://forumlowyatid;everyday
+
+SPECIFIC DAY ALARM EXAMPLE:
+Diffday;10;00;https://forumlowyatid;saturday
+
+This method is more in-line with the current system. By letting users assign a specific day, users can
+create multiple schedules for different days at anytime they like.
+
+Java's DayOfWeek value is as follows:
+Monday = 1
+Tuesday = 2
+Wednesday = 3
+Thursday = 4
+Friday = 5
+Saturday = 6
+Sunday = 7
+
+HOW DOES THE ALARM HANDLE THIS?
+For everyday, use the existing code.
+For specific day, check for the day in the string. Add +n days instead of +1 day.
+
+n days is determined by:
+Get current day.
+Find difference with scheduled day. (Scheduled Day - Today)
+If difference is negative, add 7.
+Add the difference.
+
+Example:
+Today is Sunday.
+Schedule day is Monday.
+1 - 7 = -6 + 7 = 1
+
+Today is Monday.
+Schedule day is Sunday.
+7 - 1 = 6.
+
+Today is Saturday 5:30pm.
+Schedule day is Monday 4:30pm.
+1 - 6 = -5 + 7 = 2
+
+
+
+

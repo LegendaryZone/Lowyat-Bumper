@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:isScrollContainer="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        tools:context=".BumperActivity" >
+
+        <EditText
+            android:id="@+id/alarm_details_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="@string/details_alarm_name"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <TimePicker
+            android:id="@+id/alarm_details_time_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alarm_details_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+        <View
+            android:id="@+id/divider2"
+            style="@style/Divider"
+            android:layout_below="@id/alarm_details_time_picker"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/alarm_details_label_tobebumped"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/divider2"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/details_tobebumped"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/lblNumberBump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/alarm_details_label_tobebumped"
+            android:layout_alignBottom="@+id/alarm_details_label_tobebumped"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_toEndOf="@+id/alarm_details_label_tobebumped"
+            android:layout_toRightOf="@+id/alarm_details_label_tobebumped"
+            android:text="@string/numberbump" />
+
+        <Spinner
+            android:id="@+id/cmbSelectDay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/alarm_details_label_tobebumped"
+            android:entries="@array/daysEntries"
+            android:prompt="@string/daysPrompt" />
+
+        <Button
+            android:id="@+id/btnApplyAlarm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cmbSelectDay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/scheduletext" />
+
+    </RelativeLayout>
+
+</ScrollView>

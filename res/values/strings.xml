@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lowyat Bumper</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Help</string>
+    <string name="headertext">Login to Lowyat Forums</string>
+    <string name="usernametext">Username</string>
+    <string name="passwordtext">Password</string>
+    <string name="logintext">Login</string>
+    <string name="scheduletext">Schedule</string>
+    <string name="bumptext">Bump</string>
+    <string name="cleartext">Clear</string>
+    <string name="selectalltext">Select All</string>
+    <string name="errortext">You are currently not logged in.</string>
+    <string name="loggedintext">Logged in as:</string>
+
+    <string name="daysPrompt">Choose a Day</string>
+    <string-array name="daysEntries">
+        <item>Everyday</item>
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+	<string name="details_alarm_name">Schedule Name</string>
+	<string name="details_tobebumped">Selected Posts to be Bumped:</string>
+	<string name="numberbump">0</string>
+	<string name="scheduleinfotext">This will schedule selected posts to be bumped everyday at your selected time.</string>
+	<string name="scheduledbumptext">Scheduled Bumps:</string>
+	<string name="noscheduletext">You have no scheduled bumps!\n\nTo do so, go to the main menu and log in to retrieve your posts. Then, select one or more posts and click the \'Schedule\' button.</string>
+	<string name="abouttext">Created by RailKill &#169; 2015</string>
+	
+	 <string name="helptext">
+        "&lt;b>How to Login?&lt;/b>
+        &lt;br/>
+        Enter username and password, then tap the blue round button.
+        &lt;br/>&lt;br/>
+        &lt;b>How to Bump?&lt;/b>
+        &lt;br/>
+        After login, select topics and tap Bump.
+        &lt;br/>&lt;br/>
+        &lt;b>How to Schedule for Bump?&lt;/b>
+        &lt;br/>
+        Select topics and tap Schedule. Enter title and choose a time.
+        &lt;br/>&lt;br/>
+        &lt;b>How to View Schedule?&lt;/b>
+        &lt;br/>
+        Tap Schedule without selecting any topics.
+        &lt;br/>&lt;br/>
+        &lt;b>About&lt;/b>
+        &lt;br/>
+        Coding and art by RailKill.	Feel free to visit my website and check out my other projects!
+        &lt;b>&lt;a href=&quot;http://railkill.com&quot;>railkill.com&lt;/a>&lt;/b>
+        "
+    </string>
+	
+	 <string name="everydaytext">Everyday</string>
+	 <string name="specificdaytext">Specific Day:</string>   
+
+</resources>

@@ -1,0 +1,37 @@
+I have created an Android app for bumping posts and it's up on Google Play Store, feel free to give any kind of feedback or help spread this to those who actually need it. Like any web browser, Lowyat Bumper sends HTTPS requests to Lowyat Forums to login, retrieve and bump topics. It also enable users to schedule a time and day to send these requests.
+
+[img]http://mojo10.synology.me/~lemoney/images/lowyatbumper/xxhdpi.png[/img]
+
+[b]GET LOWYAT BUMPER HERE:[/b]
+[url=https://play.google.com/store/apps/details?id=com.railkill.lowyatbumper]https://play.google.com/store/apps/details?...ll.lowyatbumper[/url]
+
+
+[b]How to Use?[/b]
+First, login at the main screen by entering your Lowyat forum username and password. Then, tap the blue round login button to start retrieving posts. It will show you a list of topics that can be bumped. Select any number of topics and tap the "Bump" button to bump them immediately OR tap the "Schedule" button to set it to automatically bump on a desired time and day. To delete or view your list of scheduled bumps, simply tap "Schedule" without selecting any topics.
+
+
+[b]Important Note[/b]
+On some Android devices, "force closing" the app or rebooting will terminate all processes associated with the app (including scheduled bumps) and will not start until you choose to manually do so. This is NOT a bug, it is an [url=http://stackoverflow.com/questions/14041208/how-to-reset-alarm-if-app-is-force-closed-in-android]Android security feature[/url] (users must be able to terminate an app completely, otherwise it can be considered a virus). If so, just start the app again and don't "force close" it this time.
+
+
+[b]FAQ[/b]
+[color=green]Q:[/color] Is this illegal or against the rules?
+[color=red]A:[/color] No.
+
+[color=green]Q:[/color] Why can't I login? All it says is "Unable to retrieve posts."
+[color=red]A:[/color] Lowyat forums only allow topics in the Trade Zone or Classifieds section to be bumped. If you have no posts in those categories, this app will not do anything. If you do, make sure you are connected to the Internet and that your login details are correct.
+
+[color=green]Q:[/color] It says "Bump request sent." but why isn't my topic bumped?
+[color=red]A:[/color] You cannot bump topics more than once per day.
+
+[color=green]Q:[/color] How do I forget my username and password?
+[color=red]A:[/color] This app encrypts and saves your login details on your phone because it is required for scheduled bumps. If you do not want this to happen, you may uninstall or clear app data to forget all saved data associated with this app.
+
+[color=green]Q:[/color] Why are my schedules tied to the phone? I logged in to another account and my previous scheduled bumps fail.
+[color=red]A:[/color] This app is designed according to [url=https://forum.lowyat.net/index.php?act=boardrules]Lowyat forum rules where you are only limited to one account[/url].
+
+[color=green]Q:[/color] Why are my scheduled bump timings inexact?
+[color=red]A:[/color] On some custom ROMs such as [url=http://xiaomi.eu/community/threads/alarmmanager-_wakeup-problem.21430/]Xiaomi's MiUI with energy saving features, scheduled timings will not be accurate[/url]. This is also true for [url=http://developer.android.com/reference/android/app/AlarmManager.html]Android KitKat (API 19) and above[/url], but there are functions the app uses in Android KitKat and above which will set the schedule as accurately as possible.
+
+[color=green]Q:[/color] Why charge money? @#%! your mother.
+[color=red]A:[/color] I am solo developer... pls :'( anyways if it's free, anyone will be able to get it and you won't gain the convenience of bumping on time compared to others.
